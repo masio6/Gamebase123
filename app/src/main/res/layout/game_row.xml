@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/black"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/gamename"
+            android:layout_width="322dp"
+            android:layout_height="37dp"
+            android:hint="Mario Bross"
+            android:textAlignment="center"
+            android:textSize="30dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/yearproduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1981"
+            app:layout_constraintStart_toEndOf="@+id/label1"
+            app:layout_constraintTop_toBottomOf="@+id/gamename" />
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Year of production:"
+            app:layout_constraintEnd_toEndOf="@+id/gamename"
+            app:layout_constraintStart_toStartOf="@+id/gamename"
+            app:layout_constraintTop_toBottomOf="@+id/gamename" />
+
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type:"
+            app:layout_constraintStart_toStartOf="@+id/label1"
+            app:layout_constraintTop_toBottomOf="@+id/label1" />
+
+        <TextView
+            android:id="@+id/typeofgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adventure"
+            app:layout_constraintEnd_toEndOf="@+id/yearproduction"
+            app:layout_constraintTop_toTopOf="@+id/label2" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grano:"
+            app:layout_constraintStart_toStartOf="@+id/label2"
+            app:layout_constraintTop_toBottomOf="@+id/label2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nie"
+            app:layout_constraintEnd_toEndOf="@+id/typeofgame"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="56dp"
+            android:layout_height="49dp"
+            app:layout_constraintEnd_toEndOf="@+id/gamename"
+            app:layout_constraintTop_toTopOf="@+id/yearproduction"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <ImageButton
+            android:id="@+id/editbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="84dp"
+            android:layout_height="77dp"
+            app:layout_constraintEnd_toStartOf="@+id/label2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gamename"
+            app:srcCompat="@drawable/pado" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

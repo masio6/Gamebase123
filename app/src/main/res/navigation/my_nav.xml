@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homefragment">
+
+    <fragment
+        android:id="@+id/homefragment"
+        android:name="com.example.gamebase.Homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" >
+        <action
+            android:id="@+id/action_homefragment_to_fragmentRegistration"
+            app:destination="@id/fragmentRegistration" />
+        <action
+            android:id="@+id/action_homefragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRegistration"
+        android:name="com.example.gamebase.FragmentRegistration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_fragmentRegistration_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.gamebase.menuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_listGame"
+            app:destination="@id/listGame" />
+        <action
+            android:id="@+id/action_menuFragment_to_listgameDone"
+            app:destination="@id/listgameDone" />
+        <action
+            android:id="@+id/action_menuFragment_to_addgame"
+            app:destination="@id/addgame" />
+        <action
+            android:id="@+id/action_menuFragment_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listGame"
+        android:name="com.example.gamebase.ListGame"
+        android:label="fragment_list_game"
+        tools:layout="@layout/fragment_list_game" >
+        <action
+            android:id="@+id/action_listGame_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listgameDone"
+        android:name="com.example.gamebase.ListgameDone"
+        android:label="fragment_listgame_done"
+        tools:layout="@layout/fragment_listgame_done" >
+        <action
+            android:id="@+id/action_listgameDone_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addgame"
+        android:name="com.example.gamebase.Addgame"
+        android:label="fragment_addgame"
+        tools:layout="@layout/fragment_addgame" >
+        <action
+            android:id="@+id/action_addgame_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>

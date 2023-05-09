@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1043669161013",
+    "project_id": "gamebase1-459ff",
+    "storage_bucket": "gamebase1-459ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043669161013:android:5da1a844c3d332da2a8d7c",
+        "android_client_info": {
+          "package_name": "com.example.gamebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043669161013-1om6vos45t3jf331b00e9eeott7pfhog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRYMB6AfZDJULW9_MbU1FjtSMChXrl9fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043669161013-1om6vos45t3jf331b00e9eeott7pfhog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
